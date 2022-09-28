@@ -45,6 +45,7 @@ namespace TE_CSharp1
         public void Loops()
         {
             int size, i;
+            Console.WriteLine("Instance Method to Print an Array");
             Console.WriteLine("Looping Concept in Instance Method to Print an Array");
             Console.WriteLine("Enter the size of the Array");
             size = Convert.ToInt32(Console.ReadLine());
@@ -52,7 +53,7 @@ namespace TE_CSharp1
             for(i=0; i < size; i++)
             {
                 Console.WriteLine($"Enter the {i+1}Th Element Of The Array");
-                arr[i] = Convert.ToInt32(Console.ReadLine());
+                arr[i] = Convert.ToInt32(Console.ReadLine()); ;
             }
             Console.WriteLine("The Array is :");
             for(i=0; i < size; i++)
