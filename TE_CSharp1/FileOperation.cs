@@ -28,28 +28,18 @@ namespace TE_CSharp1
             }
             Console.WriteLine("-----------------------------------------");
 
-            //ReadAllLines
-            /*string[] content;
+            //Read First Line
+            string[] content;
             content = File.ReadAllLines(path2);
+            int count = File.ReadAllLines(path2).Length;
             Console.WriteLine(content[0]);
-            Console.WriteLine(content[1]);
-            Console.WriteLine("-----------------------------------------");
+           // Console.WriteLine(content[1]);
+            Console.WriteLine("The Total No. Of Lines in the File are: "+count);
 
-            //ReadAllText
-            string content1;
-            content1 = File.ReadAllText(path2);
-            Console.WriteLine(content1);
-            Console.WriteLine("-----------------------------------------");
 
-            //LINQ
-            var str = from info in File.ReadLines(path2) //@"E:\TE.txt"
-                      where info.StartsWith("Files") || info.Contains("append")
-                      select info;
-
-            File.AppendAllLines(@"E:\TE1.txt", str);*/
 
             //Move the file from one path to another
-            File.Move(path5, path4);
+           File.Move(path5, path4);
             //File.Move(Source,destination)
            
 
